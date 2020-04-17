@@ -2,7 +2,7 @@ import { createAppContainer } from "react-navigation";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import { createStackNavigator } from "react-navigation-stack";
 
-import HomeScreen from "../views/home";
+import HomeScreen from "../views/home/home";
 
 //Screen in the Home tab
 const DashboardContainer = createStackNavigator(
