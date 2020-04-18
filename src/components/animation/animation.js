@@ -35,6 +35,7 @@ export default class Pulse extends Component {
     }
 
     constructor(props) {
+
         super(props);
 
         this.state = {
@@ -125,8 +126,10 @@ export default class Pulse extends Component {
 
         return (
             <View style={containerStyle}>
+
                 {started &&
                     <View style={pulseWrapperStyle}>
+
                         {pulses.map((pulse) =>
                             <Animated.View
                                 key={pulse.pulseKey}
@@ -134,7 +137,7 @@ export default class Pulse extends Component {
                                     styles.pulse,
                                     {
                                         borderColor: color,
-                                        borderWidth: 1,
+                                        borderWidth: 2,
                                         width: pulse.diameter,
                                         height: pulse.diameter,
                                         opacity: pulse.opacity,
@@ -146,12 +149,16 @@ export default class Pulse extends Component {
                                 ]}
                             />
                         )}
+
                         <TouchableOpacity>
+
                             <Image style={styles.image} source={require('../../../assets/Play.png')} />
+
                         </TouchableOpacity>
 
                     </View>
                 }
+
             </View>
         )
     }
