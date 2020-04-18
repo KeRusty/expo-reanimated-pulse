@@ -16,7 +16,7 @@ export default function Home() {
 
                     <ImageBackground style={styles.image} source={require('../../../assets/image.png')}>
 
-                        <Animation color='#7bd645' numPulses={2} diameter={200} speed={20} duration={2000} />
+                        <Animation color='#7bd645' numPulses={2} diameter={180} speed={20} duration={2000} />
 
                     </ImageBackground>
 
